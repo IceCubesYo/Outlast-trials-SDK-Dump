@@ -1,0 +1,57 @@
+// AnimBlueprintGeneratedClass enemyFace_AnimBlueprint.enemyFace_AnimBlueprint_C
+// Size: 0x16e9 (Inherited: 0x2c0)
+struct UenemyFace_AnimBlueprint_C : UAnimInstance {
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2c0(0x08)
+	struct FAnimNode_Root AnimGraphNode_Root; // 0x2c8(0x30)
+	struct FAnimNode_CopyPoseFromMesh AnimGraphNode_CopyPoseFromMesh; // 0x2f8(0x1d8)
+	struct FAnimNode_PoseBlendNode AnimGraphNode_PoseBlendNode_2; // 0x4d0(0xa0)
+	struct FAnimNode_Slot AnimGraphNode_Slot; // 0x570(0x48)
+	struct FAnimNode_LayeredBoneBlend AnimGraphNode_LayeredBoneBlend; // 0x5b8(0xc0)
+	struct FAnimNode_SaveCachedPose AnimGraphNode_SaveCachedPose_2; // 0x678(0x158)
+	struct FAnimNode_UseCachedPose AnimGraphNode_UseCachedPose_4; // 0x7d0(0x28)
+	struct FAnimNode_UseCachedPose AnimGraphNode_UseCachedPose_3; // 0x7f8(0x28)
+	struct FAnimNode_PoseBlendNode AnimGraphNode_PoseBlendNode; // 0x820(0xa0)
+	struct FAnimNode_ApplyAdditive AnimGraphNode_ApplyAdditive_3; // 0x8c0(0xc8)
+	struct FAnimNode_UseCachedPose AnimGraphNode_UseCachedPose_2; // 0x988(0x28)
+	struct FAnimNode_ApplyAdditive AnimGraphNode_ApplyAdditive_2; // 0x9b0(0xc8)
+	struct FAnimNode_UseCachedPose AnimGraphNode_UseCachedPose; // 0xa78(0x28)
+	struct FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_8; // 0xaa0(0x80)
+	struct FAnimNode_TransitionResult AnimGraphNode_TransitionResult_2; // 0xb20(0x28)
+	struct FAnimNode_TransitionResult AnimGraphNode_TransitionResult; // 0xb48(0x28)
+	struct FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_7; // 0xb70(0x80)
+	struct FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_6; // 0xbf0(0x80)
+	struct FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_5; // 0xc70(0x80)
+	struct FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_4; // 0xcf0(0x80)
+	struct FAnimNode_BlendListByEnum AnimGraphNode_BlendListByEnum; // 0xd70(0xb8)
+	struct FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_3; // 0xe28(0x80)
+	struct FAnimNode_StateResult AnimGraphNode_StateResult_2; // 0xea8(0x30)
+	struct FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_2; // 0xed8(0x80)
+	struct FAnimNode_ApplyAdditive AnimGraphNode_ApplyAdditive; // 0xf58(0xc8)
+	struct FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer; // 0x1020(0x80)
+	struct FAnimNode_StateResult AnimGraphNode_StateResult; // 0x10a0(0x30)
+	struct FAnimNode_StateMachine AnimGraphNode_StateMachine; // 0x10d0(0xb0)
+	struct FAnimNode_SaveCachedPose AnimGraphNode_SaveCachedPose; // 0x1180(0x158)
+	char pad_12D8[0x8]; // 0x12d8(0x08)
+	struct FAnimNode_LookAt AnimGraphNode_LookAt_2; // 0x12e0(0x1b0)
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace; // 0x1490(0x20)
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace; // 0x14b0(0x20)
+	struct FAnimNode_LookAt AnimGraphNode_LookAt; // 0x14d0(0x1b0)
+	struct FAnimNode_MakeDynamicAdditive AnimGraphNode_MakeDynamicAdditive; // 0x1680(0x38)
+	struct UPoseAsset* PoseAsset; // 0x16b8(0x08)
+	struct FVector LookAtLocation; // 0x16c0(0x0c)
+	float LookAtAlpha; // 0x16cc(0x04)
+	struct UAnimSequence* LipSyncAnim; // 0x16d0(0x08)
+	bool HasPoses; // 0x16d8(0x01)
+	bool IsEmoting; // 0x16d9(0x01)
+	char pad_16DA[0x2]; // 0x16da(0x02)
+	float ExpressHowMuch; // 0x16dc(0x04)
+	struct UAnimSequence* WhichExpression; // 0x16e0(0x08)
+	enum class Face_BaseEmotion_Enum FaceBaseEmotion; // 0x16e8(0x01)
+
+	void AnimGraph(struct FPoseLink& AnimGraph); // Function enemyFace_AnimBlueprint.enemyFace_AnimBlueprint_C.AnimGraph // (HasOutParms|BlueprintCallable|BlueprintEvent) // @ game+0x201e6d4
+	void BlueprintUpdateAnimation(float DeltaTimeX); // Function enemyFace_AnimBlueprint.enemyFace_AnimBlueprint_C.BlueprintUpdateAnimation // (Event|Public|BlueprintEvent) // @ game+0x201e6d4
+	void PlayFace(); // Function enemyFace_AnimBlueprint.enemyFace_AnimBlueprint_C.PlayFace // (BlueprintCallable|BlueprintEvent) // @ game+0x201e6d4
+	void LipSyncFeed(); // Function enemyFace_AnimBlueprint.enemyFace_AnimBlueprint_C.LipSyncFeed // (BlueprintCallable|BlueprintEvent) // @ game+0x201e6d4
+	void ExecuteUbergraph_enemyFace_AnimBlueprint(int32_t EntryPoint); // Function enemyFace_AnimBlueprint.enemyFace_AnimBlueprint_C.ExecuteUbergraph_enemyFace_AnimBlueprint // (Final|UbergraphFunction) // @ game+0x201e6d4
+};
+
